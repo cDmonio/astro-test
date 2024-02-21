@@ -1,0 +1,106 @@
+---
+import HeaderButton from '../components/HeaderButton.astro'
+console.log('javascript')
+---
+
+<header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
+    <div class="mx-auto text-center mb-8 lg:mb-16">
+        <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
+            Welcome to MYSPACE
+        </h2>
+        <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+            A place where you can be yourself and express your thoughts and feelings.
+        </p>
+    </div>
+
+    <nav class="flex flex-col items-center justify-between w-full text-center md:flex-row">
+        <HeaderButton link="/">
+            <svg
+                slot="before" 
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                <path d="M16 3l0 4"></path>
+                <path d="M8 3l0 4"></path>
+                <path d="M4 11l16 0"></path>
+                <path d="M8 15h2v2h-2z"></path>
+            </svg>
+            Home
+        </HeaderButton>
+        <HeaderButton href="/about">
+            <svg
+                slot="before" 
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                <path d="M16 3l0 4"></path>
+                <path d="M8 3l0 4"></path>
+                <path d="M4 11l16 0"></path>
+                <path d="M8 15h2v2h-2z"></path>
+            </svg>
+            About
+        </HeaderButton>
+        <HeaderButton href="#blog">
+            <svg
+                slot="before" 
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                <path d="M16 3l0 4"></path>
+                <path d="M8 3l0 4"></path>
+                <path d="M4 11l16 0"></path>
+                <path d="M8 15h2v2h-2z"></path>
+            </svg>
+            Blog
+        </HeaderButton>
+        <HeaderButton href="#contact">
+            <svg
+                slot="before" 
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                <path d="M16 3l0 4"></path>
+                <path d="M8 3l0 4"></path>
+                <path d="M4 11l16 0"></path>
+                <path d="M8 15h2v2h-2z"></path>
+            </svg>
+            Contact
+        </HeaderButton>
+    </nav>
+</header>
